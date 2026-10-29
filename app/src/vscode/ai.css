@@ -1,0 +1,90 @@
+/* The AI chat panel (AiPanel.tsx): Copilot Chat's look in VS Code's Dark Modern theme, in the secondary side bar.
+   It fills whatever holds it (VSCodeApp.tsx gives it ~360 px), or the whole page in the dev harness (.ai-harness). */
+.ai {
+  --ai-bg: #181818; --ai-line: #2b2b2b; --ai-ink: #cccccc; --ai-ink2: #9d9d9d; --ai-ink3: #8b8b8b;
+  --ai-input: #313131; --ai-input-line: #3c3c3c; --ai-focus: #0078d4; --ai-button: #0078d4; --ai-button-hover: #026ec1;
+  --ai-code: #1f1f1f; --ai-head: #202020; --ai-hover: rgba(90, 93, 94, 0.31); --ai-link: #4daafc; --ai-error: #f85149;
+  --ai-font: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, Ubuntu, 'Droid Sans', sans-serif;
+  --ai-mono: Consolas, 'Cascadia Code', 'Courier New', monospace;
+  position: absolute; inset: 0; display: flex; flex-direction: column; min-width: 0; overflow: hidden;
+  background: var(--ai-bg); color: var(--ai-ink); font: 13px/1.4 var(--ai-font); -webkit-font-smoothing: antialiased;
+  text-align: left; cursor: default; user-select: text;
+}
+.ai *, .ai *::before, .ai *::after { box-sizing: border-box; }
+.ai button { font: inherit; color: inherit; cursor: pointer; }
+.ai-spacer { flex: 1; }
+.ai-icon { display: inline-grid; place-items: center; flex: none; width: 22px; height: 22px; padding: 0; border: 0; border-radius: 5px; background: none; color: var(--ai-ink); }
+.ai-icon:hover { background: var(--ai-hover); }
+.ai-icon:disabled { opacity: 0.4; cursor: default; }
+/* the pane's title row: CHAT, the model answering, New Chat. Inside VS Code's secondary side bar (VSCodeApp.tsx) the
+   shell draws that row itself (Chat, New Chat, Hide), so there the panel starts at its content, as Copilot's does. */
+.ai-head { display: flex; align-items: center; gap: 8px; flex: none; height: 35px; padding: 0 8px 0 20px; }
+.vsc-aux-body > .ai > .ai-head { display: none; }
+.ai-title { font-size: 11px; text-transform: uppercase; white-space: nowrap; }
+.ai-head-model { color: var(--ai-ink2); font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* the welcome view (no messages yet) */
+.ai-welcome { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 0 24px 24px; overflow: auto; text-align: center; }
+.ai-welcome h2 { margin: 8px 0 0; font-size: 16px; font-weight: 600; color: #e6e6e6; }
+.ai-welcome p { margin: 0; max-width: 300px; color: var(--ai-ink2); }
+.ai-welcome code { padding: 1px 4px; border-radius: 3px; background: #3c3c3c; color: #d0d0d0; font: 12px var(--ai-mono); }
+.ai-chips { display: flex; flex-direction: column; gap: 6px; width: 100%; max-width: 280px; margin-top: 12px; }
+.ai-chips button { display: flex; align-items: center; gap: 8px; padding: 6px 10px; border: 1px solid var(--ai-input-line); border-radius: 4px; background: var(--ai-input); color: var(--ai-ink); text-align: left; }
+.ai-chips button:hover { background: #3c3c3c; border-color: #4a4a4a; }
+.ai-chips button svg { flex: none; color: var(--ai-link); }
+.ai-note { color: var(--ai-ink3) !important; font-size: 12px; }
+/* the messages */
+.ai-list { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 4px 0; scrollbar-width: thin; scrollbar-color: rgba(121, 121, 121, 0.4) transparent; }
+.ai-msg { padding: 10px 20px; }
+.ai-user { background: rgba(255, 255, 255, 0.03); border-top: 1px solid rgba(255, 255, 255, 0.08); border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+.ai-who { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-weight: 600; }
+.ai-avatar { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: #4d4d4d; color: #fff; font-size: 10px; font-weight: 600; }
+.ai-text { white-space: pre-wrap; overflow-wrap: anywhere; }
+.ai-answer .ai-text { white-space: normal; }
+.ai-text > :first-child { margin-top: 0; }
+.ai-text > :last-child { margin-bottom: 0; }
+.ai-text p { margin: 0 0 8px; }
+.ai-text ul, .ai-text ol { margin: 0 0 8px; padding-left: 22px; }
+.ai-text li { margin: 2px 0; }
+.ai-text h1, .ai-text h2, .ai-text h3, .ai-text h4 { margin: 12px 0 6px; font-size: 13px; font-weight: 600; }
+.ai-text a { color: var(--ai-link); text-decoration: none; }
+.ai-text a:hover { text-decoration: underline; }
+.ai-text code { padding: 1px 4px; border-radius: 3px; background: #3c3c3c; color: #d0d0d0; font: 12px/1.4 var(--ai-mono); }
+.ai-text blockquote { margin: 0 0 8px; padding: 2px 10px; border-left: 3px solid #616161; color: var(--ai-ink2); }
+.ai-text table { border-collapse: collapse; margin: 0 0 8px; font-size: 12px; }
+.ai-text th, .ai-text td { padding: 3px 8px; border: 1px solid var(--ai-input-line); }
+.ai-text pre { margin: 0; padding: 8px 10px; overflow-x: auto; background: var(--ai-code); font: 12px/1.45 var(--ai-mono); white-space: pre; scrollbar-width: thin; scrollbar-color: rgba(121, 121, 121, 0.4) transparent; }
+.ai-text pre code { padding: 0; background: none; color: #d4d4d4; font: inherit; }
+/* a code block: its header carries the file's path, Apply and Copy */
+.ai-block { margin: 8px 0; border: 1px solid var(--ai-line); border-radius: 4px; overflow: hidden; }
+.ai-block-head { display: flex; align-items: center; gap: 6px; height: 28px; padding: 0 4px 0 8px; border-bottom: 1px solid var(--ai-line); background: var(--ai-head); font-size: 12px; }
+.ai-block-head svg { flex: none; }
+.ai-block-path { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.ai-block-lang { color: var(--ai-ink2); font-size: 11px; text-transform: uppercase; }
+.ai-apply { display: inline-flex; align-items: center; flex: none; height: 20px; padding: 0 9px; border: 0; border-radius: 2px; background: var(--ai-button); color: #fff; font-size: 12px; }
+.ai-apply:hover { background: var(--ai-button-hover); }
+.ai-apply:disabled { opacity: 0.5; cursor: default; }
+.ai-applied { display: inline-flex; align-items: center; gap: 3px; flex: none; height: 20px; padding: 0 6px; color: var(--ai-ink2); font-size: 12px; }
+.ai-applied svg { color: #89d185; }
+.ai-actions { display: flex; align-items: center; gap: 4px; margin-top: 6px; }
+.ai-all { display: inline-flex; align-items: center; gap: 5px; height: 22px; padding: 0 8px; border: 1px solid var(--ai-input-line); border-radius: 2px; background: var(--ai-input); color: var(--ai-ink); font-size: 12px; }
+.ai-all:hover { background: #3c3c3c; }
+.ai-error .ai-text { color: var(--ai-error); }
+.ai-busy { display: inline-flex; align-items: center; gap: 7px; margin-top: 8px; color: var(--ai-ink2); font-size: 12px; }
+.ai-busy i { width: 12px; height: 12px; border: 2px solid rgba(204, 204, 204, 0.22); border-top-color: var(--ai-ink); border-radius: 50%; animation: ai-spin 0.9s linear infinite; }
+@keyframes ai-spin { to { transform: rotate(360deg); } }
+/* the composer, at the bottom */
+.ai-dock { flex: none; padding: 6px 12px 10px; }
+.ai-composer { border: 1px solid var(--ai-input-line); border-radius: 4px; background: var(--ai-input); }
+.ai-composer:focus-within { border-color: var(--ai-focus); }
+.ai-composer textarea { display: block; width: 100%; max-height: 160px; padding: 8px 10px 4px; border: 0; background: none; color: var(--ai-ink); font: inherit; line-height: 1.4; resize: none; outline: none; overflow-y: auto; scrollbar-width: thin; }
+.ai-composer textarea::placeholder { color: #989898; }
+.ai-composer-row { display: flex; align-items: center; gap: 4px; padding: 2px 4px 4px 6px; }
+.ai-context { display: inline-flex; align-items: center; gap: 4px; height: 20px; min-width: 0; padding: 0 6px; border: 1px solid var(--ai-input-line); border-radius: 3px; color: var(--ai-ink2); font-size: 11px; white-space: nowrap; overflow: hidden; }
+.ai-model { display: inline-flex; align-items: center; gap: 3px; flex: none; height: 22px; padding: 0 6px; border-radius: 4px; color: var(--ai-ink); font-size: 12px; white-space: nowrap; }
+.ai-send { display: inline-grid; place-items: center; flex: none; width: 24px; height: 24px; padding: 0; border: 0; border-radius: 4px; background: none; color: var(--ai-ink); }
+.ai-send:hover { background: var(--ai-hover); }
+.ai-send:disabled { opacity: 0.4; cursor: default; }
+.ai-stop { background: var(--ai-button); color: #fff; }
+.ai-stop:hover { background: var(--ai-button-hover); }
+/* the dev harness: the panel alone over the office (?aipanel=1) */
+.ai-harness { position: fixed; inset: 0; z-index: 100; background: #181818; }

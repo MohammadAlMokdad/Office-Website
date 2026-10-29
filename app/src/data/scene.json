@@ -1,0 +1,1240 @@
+{
+ "units": "metres, three.js axes (x, y up, z = -Blender y)",
+ "atlases": {
+  "Electrical": {
+   "size": 1024,
+   "pxPerM": 1138,
+   "color": "textures/Electrical.ktx2",
+   "spec": "textures/Electrical_spec.ktx2",
+   "lamps": "textures/Electrical_lamps.ktx2",
+   "day": "textures/Electrical_day.ktx2"
+  },
+  "Alpha": {
+   "size": 2048,
+   "pxPerM": 863,
+   "color": "textures/Alpha.ktx2",
+   "spec": "textures/Alpha_spec.ktx2",
+   "lamps": "textures/Alpha_lamps.ktx2",
+   "day": "textures/Alpha_day.ktx2"
+  },
+  "Ceiling": {
+   "size": 2048,
+   "pxPerM": 295,
+   "color": "textures/Ceiling.ktx2",
+   "spec": "textures/Ceiling_spec.ktx2",
+   "lamps": "textures/Ceiling_lamps.ktx2",
+   "day": "textures/Ceiling_day.ktx2"
+  },
+  "Floor": {
+   "size": 4096,
+   "pxPerM": 590,
+   "color": "textures/Floor.ktx2",
+   "spec": "textures/Floor_spec.ktx2",
+   "lamps": "textures/Floor_lamps.ktx2",
+   "day": "textures/Floor_day.ktx2"
+  },
+  "IslandAli": {
+   "size": 4096,
+   "pxPerM": 697,
+   "color": "textures/IslandAli.ktx2",
+   "spec": "textures/IslandAli_spec.ktx2",
+   "lamps": "textures/IslandAli_lamps.ktx2",
+   "day": "textures/IslandAli_day.ktx2"
+  },
+  "IslandSalah": {
+   "size": 4096,
+   "pxPerM": 774,
+   "color": "textures/IslandSalah.ktx2",
+   "spec": "textures/IslandSalah_spec.ktx2",
+   "lamps": "textures/IslandSalah_lamps.ktx2",
+   "day": "textures/IslandSalah_day.ktx2"
+  },
+  "Lighting": {
+   "size": 1024,
+   "pxPerM": 669,
+   "color": "textures/Lighting.ktx2",
+   "spec": "textures/Lighting_spec.ktx2",
+   "lamps": "textures/Lighting_lamps.ktx2",
+   "day": "textures/Lighting_day.ktx2"
+  },
+  "Lounge": {
+   "size": 4096,
+   "pxPerM": 642,
+   "color": "textures/Lounge.ktx2",
+   "spec": "textures/Lounge_spec.ktx2",
+   "lamps": "textures/Lounge_lamps.ktx2",
+   "day": "textures/Lounge_day.ktx2"
+  },
+  "Structure": {
+   "size": 4096,
+   "pxPerM": 316,
+   "color": "textures/Structure.ktx2",
+   "spec": "textures/Structure_spec.ktx2",
+   "lamps": "textures/Structure_lamps.ktx2",
+   "day": "textures/Structure_day.ktx2"
+  },
+  "TVWall": {
+   "size": 4096,
+   "pxPerM": 727,
+   "color": "textures/TVWall.ktx2",
+   "spec": "textures/TVWall_spec.ktx2",
+   "lamps": "textures/TVWall_lamps.ktx2",
+   "day": "textures/TVWall_day.ktx2"
+  },
+  "WindowDesks": {
+   "size": 4096,
+   "pxPerM": 1227,
+   "color": "textures/WindowDesks.ktx2",
+   "spec": "textures/WindowDesks_spec.ktx2",
+   "lamps": "textures/WindowDesks_lamps.ktx2",
+   "day": "textures/WindowDesks_day.ktx2"
+  }
+ },
+ "glass": {
+  "Alcohol_Liquid": {
+   "color": [
+    0.85,
+    0.95,
+    1
+   ],
+   "alpha": 1,
+   "transmission": 1,
+   "roughness": 0.05,
+   "ior": 1.45
+  },
+  "Spray_Bottle_Plastic": {
+   "color": [
+    0.85,
+    0.9,
+    0.95
+   ],
+   "alpha": 1,
+   "transmission": 0.6,
+   "roughness": 0.2,
+   "ior": 1.45
+  },
+  "Tracker_Glass_MAT": {
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "alpha": 0.25,
+   "transmission": 1,
+   "roughness": 0.1,
+   "ior": 1.5
+  },
+  "Glass": {
+   "color": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "alpha": 0.25,
+   "transmission": 1,
+   "roughness": 0,
+   "ior": 1.5
+  },
+  "MhmdDesk_PET": {
+   "color": [
+    0.92,
+    0.95,
+    0.97
+   ],
+   "alpha": 0.11,
+   "transmission": 0,
+   "roughness": 0.02,
+   "ior": 1.45
+  },
+  "MhmdDesk_Water": {
+   "color": [
+    0.55,
+    0.75,
+    0.9
+   ],
+   "alpha": 0.17,
+   "transmission": 0,
+   "roughness": 0.01,
+   "ior": 1.45
+  },
+  "SpectacleLens": {
+   "color": [
+    0.95,
+    0.97,
+    0.98
+   ],
+   "alpha": 0.12,
+   "transmission": 1,
+   "roughness": 0.02,
+   "ior": 1.5
+  },
+  "Spray_Cap": {
+   "color": [
+    0.6,
+    0.8,
+    0.95
+   ],
+   "alpha": 1,
+   "transmission": 0.5,
+   "roughness": 0.2,
+   "ior": 1.45
+  },
+  "Glass_Clear": {
+   "color": [
+    0.92,
+    0.95,
+    0.96
+   ],
+   "alpha": 0.07,
+   "transmission": 0,
+   "roughness": 0.02,
+   "ior": 1.5
+  }
+ },
+ "env": {
+  "probes": {
+   "center": {
+    "file": "env_center.exr",
+    "center": [
+     -0.4000000059604645,
+     1.1829999685287476,
+     1.090000033378601
+    ]
+   },
+   "TVWall": {
+    "file": "env_TVWall.exr",
+    "center": [
+     -0.4846291244029999,
+     1.2330000400543213,
+     -1.2068281173706055
+    ]
+   },
+   "IslandAli": {
+    "file": "env_IslandAli.exr",
+    "center": [
+     -1.6109381914138794,
+     1.2330000400543213,
+     2.71805477142334
+    ]
+   },
+   "IslandSalah": {
+    "file": "env_IslandSalah.exr",
+    "center": [
+     -0.4419619143009186,
+     1.2330000400543213,
+     2.58022403717041
+    ]
+   },
+   "WindowDesks": {
+    "file": "env_WindowDesks.exr",
+    "center": [
+     1.1867295503616333,
+     1.2330000400543213,
+     -0.23160788416862488
+    ]
+   },
+   "Lounge": {
+    "file": "env_Lounge.exr",
+    "center": [
+     -0.4000000059604645,
+     1.2330000400543213,
+     1.090000033378601
+    ]
+   }
+  },
+  "atlasProbe": {
+   "Floor": "center",
+   "Ceiling": "center",
+   "Structure": "center",
+   "IslandAli": "IslandAli",
+   "IslandSalah": "IslandSalah",
+   "WindowDesks": "WindowDesks",
+   "TVWall": "TVWall",
+   "Lounge": "Lounge",
+   "Electrical": "center",
+   "Lighting": "center",
+   "Alpha": "center"
+  },
+  "meanLuminance": 0.16445288185638876,
+  "boxMin": [
+   -2.876,
+   -0.367,
+   -2.22
+  ],
+  "boxMax": [
+   2.084,
+   2.468,
+   4.395
+  ]
+ },
+ "exposure": 2,
+ "view": "AgX",
+ "backdrop": {
+  "sky": [
+   0.6792,
+   0.7578,
+   0.8608
+  ],
+  "ground": [
+   0.5853,
+   0.5064,
+   0.4383
+  ]
+ },
+ "props": {
+  "tvRemote": {
+   "center": [
+    -0.848,
+    0.159,
+    0.986
+   ],
+   "box": [
+    [
+     -0.876,
+     0.079,
+     0.938
+    ],
+    [
+     -0.821,
+     0.24,
+     1.033
+    ]
+   ]
+  },
+  "soundbarRemote": {
+   "center": [
+    -1.52,
+    0.147,
+    0.993
+   ],
+   "box": [
+    [
+     -1.543,
+     0.079,
+     0.951
+    ],
+    [
+     -1.497,
+     0.214,
+     1.034
+    ]
+   ]
+  },
+  "soundbar": {
+   "center": [
+    -0.395,
+    0.25,
+    -2.099
+   ],
+   "box": [
+    [
+     -0.92,
+     0.213,
+     -2.142
+    ],
+    [
+     0.13,
+     0.288,
+     -2.056
+    ]
+   ]
+  },
+  "blindRemoteRed": {
+   "center": [
+    -0.939,
+    0.061,
+    2.301
+   ],
+   "box": [
+    [
+     -0.959,
+     0.053,
+     2.227
+    ],
+    [
+     -0.92,
+     0.07,
+     2.375
+    ]
+   ]
+  },
+  "blindRemoteBlue": {
+   "center": [
+    -0.986,
+    0.061,
+    2.301
+   ],
+   "box": [
+    [
+     -1.006,
+     0.053,
+     2.227
+    ],
+    [
+     -0.967,
+     0.07,
+     2.375
+    ]
+   ]
+  },
+  "movmax": {
+   "center": [
+    -0.732,
+    0.252,
+    2.605
+   ],
+   "box": [
+    [
+     -0.795,
+     0.053,
+     2.442
+    ],
+    [
+     -0.67,
+     0.452,
+     2.768
+    ]
+   ]
+  }
+ },
+ "seats": [
+  {
+   "name": "Chair_Emp_IslandWest",
+   "label": "sit at Ali's desk",
+   "eye": [
+    -2.172,
+    0.803,
+    3.585
+   ],
+   "look": [
+    -1.422,
+    0.665,
+    3.585
+   ],
+   "box": [
+    [
+     -2.664,
+     -0.367,
+     3.146
+    ],
+    [
+     -1.822,
+     0.745,
+     4.024
+    ]
+   ]
+  },
+  {
+   "name": "Chair_Salah",
+   "label": "sit at Salah's desk",
+   "eye": [
+    -0.182,
+    0.803,
+    3.544
+   ],
+   "look": [
+    -0.826,
+    0.668,
+    3.159
+   ],
+   "box": [
+    [
+     -0.488,
+     -0.367,
+     3.2
+    ],
+    [
+     0.26,
+     0.789,
+     3.97
+    ]
+   ]
+  },
+  {
+   "name": "Chair_Emp_Desk1",
+   "label": "sit at Zuhair's desk",
+   "eye": [
+    1.091,
+    0.803,
+    -1.446
+   ],
+   "look": [
+    1.622,
+    0.527,
+    -1.446
+   ],
+   "box": [
+    [
+     0.67,
+     -0.367,
+     -1.885
+    ],
+    [
+     1.512,
+     0.745,
+     -1.006
+    ]
+   ]
+  },
+  {
+   "name": "Chair_Emp_Desk2",
+   "label": "sit at Mhmd's desk",
+   "eye": [
+    1.091,
+    0.803,
+    0.086
+   ],
+   "look": [
+    1.622,
+    0.527,
+    0.086
+   ],
+   "box": [
+    [
+     0.67,
+     -0.367,
+     -0.353
+    ],
+    [
+     1.512,
+     0.745,
+     0.526
+    ]
+   ]
+  },
+  {
+   "name": "Chair_Emp_RoundTable",
+   "label": "sit at the round table",
+   "eye": [
+    1.071,
+    0.803,
+    2.14
+   ],
+   "look": [
+    0.404,
+    0.503,
+    1.798
+   ],
+   "box": [
+    [
+     0.553,
+     -0.367,
+     1.586
+    ],
+    [
+     1.702,
+     0.745,
+     2.751
+    ]
+   ]
+  },
+  {
+   "name": "Recliner",
+   "label": "sit in the recliner",
+   "eye": [
+    -1.184,
+    0.683,
+    1.3
+   ],
+   "look": [
+    -0.395,
+    0.683,
+    -2.181
+   ],
+   "box": [
+    [
+     -1.62,
+     -0.367,
+     0.815
+    ],
+    [
+     -0.748,
+     0.653,
+     1.784
+    ]
+   ]
+  }
+ ],
+ "screens": {
+  "screen_Ali_Monitor": {
+   "aspect": 2.6604,
+   "view": [
+    0,
+    0.1516,
+    1,
+    1
+   ],
+   "frame": {
+    "center": [
+     -1.6292,
+     0.747,
+     3.5849
+    ],
+    "right": [
+     -0.0001,
+     0,
+     1
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ],
+    "normal": [
+     -1,
+     0,
+     -0.0001
+    ],
+    "size": [
+     1.1505,
+     0.3966
+    ]
+   }
+  },
+  "screen_AliWall_DisplayOutlets": {
+   "aspect": 1.7045,
+   "view": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "frame": {
+    "center": [
+     -2.8369,
+     1.3126,
+     1.0264
+    ],
+    "right": [
+     0,
+     0,
+     -1
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ],
+    "normal": [
+     1,
+     0,
+     0
+    ],
+    "size": [
+     0.15,
+     0.088
+    ]
+   }
+  },
+  "screen_Laptop_Desk1": {
+   "aspect": 1.7656,
+   "view": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "frame": {
+    "center": [
+     1.7543,
+     0.5541,
+     -1.4456
+    ],
+    "right": [
+     0,
+     0,
+     1
+    ],
+    "up": [
+     0.1736,
+     0.9848,
+     0
+    ],
+    "normal": [
+     -0.9848,
+     0.1736,
+     0
+    ],
+    "size": [
+     0.3811,
+     0.2159
+    ]
+   }
+  },
+  "screen_Laptop_Desk2": {
+   "aspect": 1.7656,
+   "view": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "frame": {
+    "center": [
+     1.7543,
+     0.5541,
+     0.0864
+    ],
+    "right": [
+     0,
+     0,
+     1
+    ],
+    "up": [
+     0.1736,
+     0.9848,
+     0
+    ],
+    "normal": [
+     -0.9848,
+     0.1736,
+     0
+    ],
+    "size": [
+     0.3811,
+     0.2159
+    ]
+   }
+  },
+  "screen_Salah_MonitorCurved": {
+   "aspect": 2.5851,
+   "view": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "frame": {
+    "center": [
+     -0.739,
+     0.6776,
+     3.2108
+    ],
+    "right": [
+     0.5157,
+     0,
+     -0.8568
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ],
+    "normal": [
+     0.8568,
+     0,
+     0.5157
+    ],
+    "size": [
+     0.7848,
+     0.312
+    ]
+   }
+  },
+  "screen_Salah_MonitorFlat": {
+   "aspect": 1.8658,
+   "view": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "frame": {
+    "center": [
+     -0.9532,
+     0.6781,
+     3.8637
+    ],
+    "right": [
+     0.0361,
+     0,
+     -0.9993
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ],
+    "normal": [
+     0.9993,
+     0,
+     0.0361
+    ],
+    "size": [
+     0.584,
+     0.313
+    ]
+   }
+  },
+  "screen_TV_75in": {
+   "aspect": 1.7633,
+   "view": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "frame": {
+    "center": [
+     -0.3954,
+     0.7456,
+     -2.1436
+    ],
+    "right": [
+     1,
+     0,
+     0
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ],
+    "normal": [
+     0,
+     0,
+     1
+    ],
+    "size": [
+     1.654,
+     0.938
+    ]
+   }
+  }
+ },
+ "lamps": {
+  "lamp_1": {
+   "center": [
+    -1.617,
+    2.3699,
+    -0.5758
+   ],
+   "switch": "LightSwitch_1_A"
+  },
+  "lamp_2": {
+   "center": [
+    0.8626,
+    2.3699,
+    -0.576
+   ],
+   "switch": "LightSwitch_1_B"
+  },
+  "lamp_3": {
+   "center": [
+    -1.6178,
+    2.3699,
+    2.7339
+   ],
+   "switch": "LightSwitch_2_A"
+  },
+  "lamp_4": {
+   "center": [
+    0.8617,
+    2.3699,
+    2.7337
+   ],
+   "switch": "LightSwitch_2_B"
+  }
+ },
+ "switches": {
+  "LightSwitch_1_A": {
+   "controls": "lamp_1",
+   "center": [
+    -2.1171,
+    0.7826,
+    -2.2099
+   ],
+   "box": [
+    [
+     -2.1353,
+     0.747,
+     -2.2158
+    ],
+    [
+     -2.0989,
+     0.8182,
+     -2.2041
+    ]
+   ],
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "onAngle": -5,
+   "offAngle": 5
+  },
+  "LightSwitch_1_B": {
+   "controls": "lamp_2",
+   "center": [
+    -2.0787,
+    0.7826,
+    -2.2099
+   ],
+   "box": [
+    [
+     -2.0969,
+     0.747,
+     -2.2158
+    ],
+    [
+     -2.0605,
+     0.8182,
+     -2.2041
+    ]
+   ],
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "onAngle": -5,
+   "offAngle": 5
+  },
+  "LightSwitch_2_A": {
+   "controls": "lamp_3",
+   "center": [
+    -2.0251,
+    0.7826,
+    -2.2099
+   ],
+   "box": [
+    [
+     -2.0433,
+     0.747,
+     -2.2158
+    ],
+    [
+     -2.0069,
+     0.8182,
+     -2.2041
+    ]
+   ],
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "onAngle": -5,
+   "offAngle": 5
+  },
+  "LightSwitch_2_B": {
+   "controls": "lamp_4",
+   "center": [
+    -1.9867,
+    0.7826,
+    -2.2099
+   ],
+   "box": [
+    [
+     -2.0049,
+     0.747,
+     -2.2158
+    ],
+    [
+     -1.9685,
+     0.8182,
+     -2.2041
+    ]
+   ],
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "normal": [
+    0,
+    0,
+    1
+   ],
+   "onAngle": -5,
+   "offAngle": 5
+  }
+ },
+ "blinds": {
+  "South": {
+   "along": [
+    1,
+    0,
+    0
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "bottom": 0.4779,
+   "dark": {
+    "top": [
+     -1.4869,
+     2.3836,
+     4.3664
+    ],
+    "width": 2.459,
+    "roll": [
+     [
+      -2.7164,
+      2.3836,
+      4.3384
+     ],
+     [
+      -0.2574,
+      2.4636,
+      4.3884
+     ]
+    ]
+   },
+   "light": {
+    "top": [
+     -1.4869,
+     2.3836,
+     4.4144
+    ],
+    "width": 2.459,
+    "roll": [
+     [
+      -2.7164,
+      2.3836,
+      4.3864
+     ],
+     [
+      -0.2574,
+      2.4636,
+      4.4364
+     ]
+    ]
+   },
+   "glass": {
+    "center": [
+     -1.4869,
+     1.4727,
+     4.4754
+    ],
+    "size": [
+     2.401,
+     1.8997
+    ]
+   }
+  },
+  "East": {
+   "along": [
+    0,
+    0,
+    -1
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "bottom": 0.5909,
+   "dark": {
+    "top": [
+     2.0556,
+     2.3836,
+     -0.4546
+    ],
+    "width": 2.578,
+    "roll": [
+     [
+      2.0276,
+      2.3836,
+      -1.7436
+     ],
+     [
+      2.0776,
+      2.4636,
+      0.8344
+     ]
+    ]
+   },
+   "light": {
+    "top": [
+     2.1036,
+     2.3836,
+     -0.4546
+    ],
+    "width": 2.578,
+    "roll": [
+     [
+      2.0756,
+      2.3836,
+      -1.7436
+     ],
+     [
+      2.1256,
+      2.4636,
+      0.8344
+     ]
+    ]
+   },
+   "glass": {
+    "center": [
+     2.1646,
+     1.5292,
+     -0.4546
+    ],
+    "size": [
+     2.52,
+     1.7867
+    ]
+   }
+  },
+  "Angled": {
+   "along": [
+    0.4559,
+    0,
+    -0.89
+   ],
+   "outward": [
+    0.89,
+    0,
+    0.4559
+   ],
+   "bottom": 0.5009,
+   "dark": {
+    "top": [
+     1.281,
+     2.3836,
+     2.8384
+    ],
+    "width": 2.071,
+    "roll": [
+     [
+      0.784,
+      2.3836,
+      1.904
+     ],
+     [
+      1.7727,
+      2.4636,
+      3.77
+     ]
+    ]
+   },
+   "light": {
+    "top": [
+     1.3237,
+     2.3836,
+     2.8602
+    ],
+    "width": 2.071,
+    "roll": [
+     [
+      0.8267,
+      2.3836,
+      1.9259
+     ],
+     [
+      1.8154,
+      2.4636,
+      3.7919
+     ]
+    ]
+   },
+   "glass": {
+    "center": [
+     1.3781,
+     1.4842,
+     2.8879
+    ],
+    "size": [
+     2.0133,
+     1.8767
+    ]
+   }
+  }
+ },
+ "floor": -0.367,
+ "ceiling": 2.468,
+ "eye": 1.62,
+ "model": "office.glb",
+ "windowView": "textures/WindowView.ktx2",
+ "lightGroups": {
+  "names": [
+   "lamp_1",
+   "lamp_2",
+   "lamp_3",
+   "lamp_4",
+   "win_South",
+   "win_East",
+   "win_Angled",
+   "sun"
+  ],
+  "rest": "other",
+  "encoding": "sqrt",
+  "tint": {
+   "lamp_1": [
+    1.1563,
+    0.9798,
+    0.7453
+   ],
+   "lamp_2": [
+    1.1534,
+    0.9799,
+    0.7522
+   ],
+   "lamp_3": [
+    1.1543,
+    0.9795,
+    0.7535
+   ],
+   "lamp_4": [
+    1.1579,
+    0.9797,
+    0.7412
+   ],
+   "win_South": [
+    0.97,
+    1.0054,
+    1.0339
+   ],
+   "win_East": [
+    0.9752,
+    1.0007,
+    1.0649
+   ],
+   "win_Angled": [
+    0.988,
+    1.0003,
+    1.032
+   ],
+   "sun": [
+    1.0427,
+    0.9966,
+    0.9102
+   ],
+   "other": [
+    0.9483,
+    1.0034,
+    1.1168
+   ]
+  },
+  "probe": {
+   "lamp_1": 0.0123,
+   "lamp_2": 0.0159,
+   "lamp_3": 0.0157,
+   "lamp_4": 0.0117,
+   "win_South": 0.2958,
+   "win_East": 0.2469,
+   "win_Angled": 0.186,
+   "sun": 0.2092,
+   "other": 0.0065
+  }
+ }
+}

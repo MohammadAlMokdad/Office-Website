@@ -1,0 +1,19 @@
+// CC BY 4.0 models used in the scene (see ../CREDITS.md).
+export const CREDITS: { use: string; title: string; url: string; author: string; authorUrl: string }[] = [
+  { use: "Ali's PC", title: 'Alienware Aurora R9 3D Model', url: 'https://sketchfab.com/3d-models/alienware-aurora-r9-3d-model-40572a8b1c584f6098d5b8c5c6be15ba', author: 'Naman Deep', authorUrl: 'https://sketchfab.com/namandeep444' },
+  { use: 'Window-desk laptops', title: 'Asus ROG Strix Scar 17 (2023) G733 Gaming Laptop', url: 'https://sketchfab.com/3d-models/asus-rog-strix-scar-17-2023-g733-gaming-laptop-51eca7b2e5884c4087f3499e523d5184', author: 'RaflyNaHa', authorUrl: 'https://sketchfab.com/RaflyNaHa' },
+  { use: "Salah's chair", title: 'Office Chair', url: 'https://sketchfab.com/3d-models/office-chair-0e7b238f35ff458e8a48236db6b0354d', author: 'Niels Philipsen', authorUrl: 'https://sketchfab.com/n.philipsen' },
+  { use: 'Mesh office chairs', title: 'Ergonomic mesh office chair', url: 'https://sketchfab.com/3d-models/ergonomic-mesh-office-chair-cd5ef0305d8545dd8cd934ebb99cf7d5', author: 'guillaumecrz', authorUrl: 'https://sketchfab.com/guillaumecrz' },
+  { use: "Ali's & Salah's desks", title: 'Standing Desk', url: 'https://sketchfab.com/3d-models/standing-desk-65a7f4b06a5f4954a0d43eb8812dd165', author: 'Ryan_Nein', authorUrl: 'https://sketchfab.com/Ryan_Nein' },
+  { use: 'Coffee maker', title: 'Drip Coffee Maker', url: 'https://sketchfab.com/3d-models/drip-coffee-maker-b3087fb615e14949ac6e790c60c42020', author: 'JudeNavarre', authorUrl: 'https://sketchfab.com/JudeNavarre' },
+  { use: "Ali's monitor", title: '3D Model Acer Nitro UltraWide Gaming Monitor', url: 'https://sketchfab.com/3d-models/3d-model-acer-nitro-ultrawide-gaming-monitor-fa6768c49e354b70a8a7bf0864903883', author: 'hoang_anh 3D Hard', authorUrl: 'https://sketchfab.com/hoanganhpk26' },
+  { use: 'Headsets', title: 'Gaming Headset', url: 'https://sketchfab.com/3d-models/gaming-headset-8a8ea478c4ec40bfad58f9e214177bdc', author: 'YarikLegendary', authorUrl: 'https://sketchfab.com/YarikLegendary' },
+  { use: "Ali's keyboard", title: 'Logitech k380 Keyboard', url: 'https://sketchfab.com/3d-models/logitech-k380-keyboard-673e44cab52e407c85188f32dc76b990', author: 'Wittybacon', authorUrl: 'https://sketchfab.com/wittybacon' },
+  { use: "Salah's keyboard", title: 'Logitech mechanical gaming keyboard RGB', url: 'https://sketchfab.com/3d-models/logitech-mechanical-gaming-keyboard-rgb-3f9f5098b8d248b3829735e05178a3dd', author: 'BlackCube', authorUrl: 'https://sketchfab.com/blackcube4' },
+  { use: "Salah's MacBook", title: 'Macbook Pro 13 inch 2020', url: 'https://sketchfab.com/3d-models/macbook-pro-13-inch-2020-efab224280fd4c3993c808107f7c0b38', author: 'timblewee', authorUrl: 'https://sketchfab.com/timblewee' },
+  { use: "Ali's & Salah's mice", title: 'Razer Basilisk V3', url: 'https://sketchfab.com/3d-models/razer-basilisk-v3-02ea1e3f51e34b59ab0140fb85a6b191', author: 'thegraphicsgeek', authorUrl: 'https://sketchfab.com/thegraphicsgeek' },
+  { use: 'Recliner', title: 'Single Seater Reclining Sofa', url: 'https://sketchfab.com/3d-models/single-seater-reclining-sofa-e42c8f99b9f5426f8ccdcdb3156908e4', author: 'HARSHA', authorUrl: 'https://sketchfab.com/harshatantri5' },
+  { use: 'Tissue boxes', title: 'TISSUE BOX', url: 'https://sketchfab.com/3d-models/tissue-box-46991c113ce84f73b5b8fc4de2df199c', author: 'pejucho', authorUrl: 'https://sketchfab.com/kh1002' },
+  { use: 'Window-desk mice', title: 'Wireless Mouse', url: 'https://sketchfab.com/3d-models/wireless-mouse-c21ee6865cbf45ee9e3caebb1d90058e', author: 'wheeldingdragon', authorUrl: 'https://sketchfab.com/wheeldingdragon' },
+  { use: 'Xbox controller', title: 'Xbox Controller', url: 'https://sketchfab.com/3d-models/xbox-controller-32d17951703b4e05abed11a1c65f5909', author: 'umkhero', authorUrl: 'https://sketchfab.com/umkhero' },
+]

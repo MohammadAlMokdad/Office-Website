@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+
+# Build output and caches
+dist/
+/build/
+*.tsbuildinfo
+.vite/
+.cache/
+__pycache__/
+*.pyc
+
+# Environment and deployment settings (copy app/.env.example to app/.env.local)
+.env
+.env.*
+!.env.example
+*.local
+.vercel/
+
+# Logs
+*.log
+*.err
+*.pid
+
+# Blender source files and backups (too large for git; the web-ready model is in app/public/models)
+*.blend
+*.blend[0-9]
+
+# Raw exports not used by the app
+/export/
+
+# Video recordings
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+
+# Loose reference images at the project root (the app's copies live in app/public/media)
+/*.jpg
+/*.jpeg
+/*.png
+
+# Large intermediate data
+*.npz
+
+# Scratch probe scripts
+tools/_*.mjs
+
+# Editors, OS files and AI-assistant folders
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

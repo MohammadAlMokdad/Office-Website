@@ -1,0 +1,6 @@
+# what the CLI leaves out of an upload (replaces .gitignore for Vercel: the models and scene data must go up)
+node_modules
+dist
+.env.local
+*.local
+tsconfig.tsbuildinfo
